@@ -15,7 +15,7 @@ const App: React.FC = () => {
     e.preventDefault();
 
     if (todo) {
-      setTodos([...todos, {id:Date.now(), todo, isDone:false}]);
+      setTodos([...todos, {id:Date.now(), todo:todo, isDone:false} ]);
       setTodo("");
     }
   };
@@ -24,8 +24,8 @@ const App: React.FC = () => {
 
   return (
     <div className="App">
-      <span className='heading'>Task Hero</span>
-      <InputField todo={todo} setTodo={setTodo} handleAdd={handleAdd}  />
+      <span className='heading'>What not to do!</span>
+      <InputField todo={ todo } setTodo={ setTodo } handleAdd={ handleAdd }  />
       <TodoList todos={todos} setTodos={setTodos}/>
       
      
