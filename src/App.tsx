@@ -34,3 +34,21 @@ const App: React.FC = () => {
 }
 
 export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//? https://www.youtube.com/watch?v=FJDVKeh7RJI&t=3302s
+//? Time : 1:00 hour
