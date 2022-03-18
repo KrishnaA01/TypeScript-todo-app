@@ -9,7 +9,7 @@ const App: React.FC = () => {
 
   const [todo, setTodo] = useState<string>("");
   const [todos, setTodos] = useState<Array<Todo>>([]);
-  console.log(todo);
+  // console.log(todo);
 
   const handleAdd = (e: React.FormEvent)=>{
     e.preventDefault();
@@ -19,7 +19,7 @@ const App: React.FC = () => {
       setTodo("");
     }
   };
-  console.log(todos);
+  // console.log(todos);
 
 
   return (
@@ -27,8 +27,6 @@ const App: React.FC = () => {
       <span className='heading'>What not to do!</span>
       <InputField todo={ todo } setTodo={ setTodo } handleAdd={ handleAdd }  />
       <TodoList todos={todos} setTodos={setTodos}/>
-      
-     
     </div>
   );
 }
@@ -38,17 +36,3 @@ export default App;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-//? https://www.youtube.com/watch?v=FJDVKeh7RJI&t=3302s
-//? Time : 1:00 hour
