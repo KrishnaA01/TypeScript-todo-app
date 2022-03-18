@@ -1,0 +1,96 @@
+
+
+.input{
+    display: flex;
+    width: 90%;
+    position: relative;
+    align-items: center;
+}
+
+.input__box{
+    width: 100%;
+    border-radius: 50px;
+    padding: 20px 30px;
+    font-size: 25px;
+    border: none;
+    transition: 0.2s;
+    box-shadow: inset 0 0 5px black;
+}
+
+.input__box:focus{
+    box-shadow: 0 0 10px 1000px rgba(0, 0, 0, 0.5);
+    outline: none;
+}
+
+.input_submit{
+    position: absolute;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    margin: 12px;
+    border-radius: 50px;
+    border: none;
+    font-size: 15px;
+    background-color: #2f74c0;
+    color: white;
+    transition: 0.2s all;
+    box-shadow: 0 0 10px rgb(44, 43, 43);
+}
+
+.input_submit:hover{
+    background-color: #388ae2;
+}
+.input_submit:active{
+    transform: scale(0.8);
+    box-shadow: 0 0 5px black;
+}
+
+.todos{
+    display: flex;
+    justify-content:space-evenly;
+    width: 90%;
+    flex-wrap: wrap;
+}
+
+.todos__single{
+    display: flex;
+    width: 30%;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 15px;
+    background-image: url("https://img.freepik.com/fotos-kostenlos/rosafarbenes-zylinderpodium-mit-herzen-und-rosa-geschenkbox-sockel-produktanzeige-3d-rendering_56104-1233.jpg?t=st=1647596217~exp=1647596817~hmac=669cc9b23e99a7f69c2337e8942d1de491d59796bb66e9a9950cf2cf14e49b38&w=1380");
+}
+
+.todos__single__text{
+    flex:1;
+    padding: 5px;
+    border: none;
+    font-size: 20px;
+}
+.todos__single__text:focus{
+    outline: none;
+}
+
+
+.icon{
+    margin-left: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+@media (max-width:1200px){
+    .todos__single{
+        width: 40%;
+    }
+}
+
+@media (max-width:700px){
+    .input{
+        width: 95%;
+    }
+    .todos{
+        width: 95%;
+    }
+    .todos__single{
+        width: 100%;
+    }
+}
