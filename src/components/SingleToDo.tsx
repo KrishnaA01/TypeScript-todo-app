@@ -1,9 +1,9 @@
 import React, { useState, useRef } from 'react';
 import { Todo } from '../model';
-import { AiFillEdit, AiFillDelete } from 'react-icons/ai';
+import { AiOutlineEdit, AiOutlineDelete } from 'react-icons/ai';
 import { MdDone } from 'react-icons/md';
 import { useEffect } from 'react';
-// import './style.css';
+
 
 
 type Props = {
@@ -48,7 +48,7 @@ export const SingleToDo = ({ todo, todos, setTodos }: Props) => {
         <input
         value={ editTodo }
         onChange={(e)=>setEditTodo(e.target.value)}
-        className="todos__single--text"
+        className="todos__single--text edit__bgc"
         ref={inputRef}
          />
       ): (
@@ -68,8 +68,8 @@ export const SingleToDo = ({ todo, todos, setTodos }: Props) => {
             }
       }
          
-      }> <AiFillEdit /> </span>
-      <span className="icon" onClick={()=>handleDelete(todo.id)} > <AiFillDelete /></span>
+      }> <AiOutlineEdit /> </span>
+      <span className="icon" onClick={()=>handleDelete(todo.id)} > <AiOutlineDelete /></span>
       <span className="icon" onClick={()=>handleDone(todo.id)}><MdDone /></span>
     </div>
 

@@ -73,7 +73,9 @@
 .todos__single--text:focus{
     outline: none;
 }
-
+.edit__bgc{
+    background-color: lightblue;
+}
 
 .icon{
     margin-left: 10px;
